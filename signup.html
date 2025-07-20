@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Contract Authorization - Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="signUp-container">
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo" />
+      </div>
+      <h3>Digital Contract Authorization</h3>
+      <p class="tagline">Your Trusted Journey Starts Here</p>
+
+      <form id="signupForm" novalidate>
+        <div class="input-group">
+          <div class="input-field">
+            <i class="fa fa-user icon"></i>
+            <input
+              type="text"
+              id="signup-username"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
+          <div id="signup-username-error" class="error-message"></div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-field">
+            <i class="fa fa-envelope icon"></i>
+            <input
+              type="email"
+              id="signup-email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div id="signup-email-error" class="error-message"></div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-field">
+            <i class="fa fa-lock icon"></i>
+            <input
+              type="password"
+              id="signup-password"
+              name="password"
+              placeholder="Password"
+            />
+            <i
+              id="toggleSignupPasswordIcon"
+              class="fa fa-eye-slash toggle-password"
+              onclick="togglePasswordVisibility('signup-password', 'toggleSignupPasswordIcon')"
+            ></i>
+          </div>
+          <div id="signup-password-error" class="error-message"></div>
+        </div>
+
+        <div class="input-group">
+          <div class="input-field">
+            <i class="fa fa-lock icon"></i>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+            />
+            <i
+              id="toggleConfirmPasswordIcon"
+              class="fa fa-eye-slash toggle-password"
+              onclick="togglePasswordVisibility('confirm-password', 'toggleConfirmPasswordIcon')"
+            ></i>
+          </div>
+          <div id="confirm-password-error" class="error-message"></div>
+        </div>
+
+        <button type="submit" class="signUp-button">Sign Up</button>
+      </form>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Log in</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
